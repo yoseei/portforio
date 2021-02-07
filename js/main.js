@@ -4,12 +4,15 @@
   let num = -1;
 
   function slideImage () {
-    if (num === 2) {
-      num = 0;
-    } else {
-      num ++; 
-    }
+    // if (num === 2) {
+    //   num = 0;
+    // } else {
+    //   num ++; 
+    // }
+    num = Math.floor(Math.random() * src_pic.length)
+
     document.getElementById("mypic").src = src_pic[num];
   }
+  
   setInterval(slideImage, 2000);
 }
