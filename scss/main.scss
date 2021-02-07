@@ -27,6 +27,7 @@ p {
   top: 0;
   background: #fff;
   margin: 0 auto;
+  z-index: 1;
   ul {
     list-style: none;
     padding: 0; 
@@ -85,17 +86,15 @@ p {
   align-items: center;
   .logo-title {
     margin: 0;
+    font-size: 30px;
+    letter-spacing: 8px;
+    position: absolute;
+    z-index: .5;
   }
-}
-
-
-.logo-title {
-  font-size: 30px;
-  letter-spacing: 8px;
-}
-
-.logo-subtitle {
-  letter-spacing: 3px;
+  .mypic {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* works */
