@@ -8,35 +8,23 @@
     },6000);
   });
 
-  // ふわっと表示
-  $(function () {
-    $(window).scroll(function () {
-      $(".effect-fade").each(function () {
-        
-        console.log("JSが読み込まれているかの確認");
-
-        var elemPos = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll > elemPos - windowHeight) {
-          $(this).addClass("effect-scroll");
-        }
-      });
-    });
-    jQuery(window).scroll();
-  });
-
+  ScrollReveal().reveal('.effect-fade', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '100px',
+    reset: true
+  })
   ScrollReveal().reveal('.feature-wrapper', { 
     duration: 2000, 
     origin: 'left',
-    distance: '100px',
+    distance: '200px',
     reset: true
   });
 
   ScrollReveal().reveal('.about-wrapper', {
     duration: 2000,
     origin: 'right',
-    distance: '100px',
+    distance: '200px',
     reset: true
   });
 
