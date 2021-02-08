@@ -1,21 +1,6 @@
 'use strict';
 {
-  
-  // const src_pic = ["img/contact.jpg", "img/drums.jpg", "img/keshiki.jpg"];
-  // let num = -1;
-
-  // function slideImage () {
-  //   // if (num === 2) {
-  //   //   num = 0;
-  //   // } else {
-  //   //   num ++; 
-  //   // }
-  //   num = Math.floor(Math.random() * src_pic.length)
-
-  //   document.getElementById("mypic").src = src_pic[num];
-  // }
-  
-  // setInterval(slideImage, 2000);
+  // トップ画像をランダムにふわっと
   $(function(){
     $(".fade-img img:not(:first-child)").hide();
     setInterval(function() {
@@ -23,12 +8,13 @@
     },6000);
   });
 
+  // ふわっと表示
   $(function () {
     $(window).scroll(function () {
       $(".effect-fade").each(function () {
         
         console.log("JSが読み込まれているかの確認");
-        
+
         var elemPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
@@ -38,6 +24,26 @@
       });
     });
     jQuery(window).scroll();
+  });
+
+  ScrollReveal().reveal('.feature-wrapper', { 
+    duration: 2000, 
+    origin: 'left',
+    distance: '100px',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.about-wrapper', {
+    duration: 2000,
+    origin: 'right',
+    distance: '100px',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.skill-items img', {
+    duration: 2000,
+    scale: 0.1,
+    reset: true
   });
 }
 

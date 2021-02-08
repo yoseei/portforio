@@ -378,7 +378,7 @@ p {
   }
   /* works */
   .works-wrapper {
-    padding: 50px 0;
+    padding: 50px 20px;
   }
   .works-header h1 {
     font-size: 20px;
@@ -397,7 +397,7 @@ p {
   }
   /* feature */
   .feature-wrapper {
-    padding: 50px 8px;
+    padding: 50px 40px;
   }
   .feature-title h1 {
     font-size: 20px;
@@ -416,13 +416,17 @@ p {
     text-align: center;
     margin-bottom: 20px;
   }
+  .feature-img img {
+    height: 300px;
+  }
   .feature-texts p {
     font-size: 14px;
   }
   /* about */
   .about-wrapper {
-    padding: 50px 10px 50px 10px;
+    padding: 50px 30px;
     background: #f3f3f3;
+    text-align: center;
   }
   .about-title h1 {
     font-size: 20px;
@@ -436,7 +440,7 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .about-detail .about-detail img {
+  .about-detail img {
     width: 100px;
     margin: 0 auto 30px;
   }
