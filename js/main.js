@@ -22,5 +22,22 @@
       $(".fade-img img:first-child").fadeOut("slow").next("img").fadeIn("slow").end().appendTo(".fade-img");
     },6000);
   });
+
+  $(function () {
+    $(window).scroll(function () {
+      $(".effect-fade").each(function () {
+        
+        console.log("JSが読み込まれているかの確認");
+        
+        var elemPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight) {
+          $(this).addClass("effect-scroll");
+        }
+      });
+    });
+    jQuery(window).scroll();
+  });
 }
 

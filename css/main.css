@@ -134,8 +134,15 @@ p {
   text-align: center;
   padding-bottom: 20px;
 }
-.works-item img {
+.works-item .effect-fade {
   max-width: 100%;
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 2000ms;
+}
+.works-item .effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 .works-item h2 {
   font-size: 12px;
