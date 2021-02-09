@@ -19,11 +19,14 @@ h1 {
 p {
   margin: 0;
 }
-
+/* gnav */
+.body-wrapper {
+  overflow: hidden;
+}
 .gnav {
   border-bottom: 2px solid hsla(90, 10%, 10%, .1);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   background: #fff;
   margin: 0 auto;

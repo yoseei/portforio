@@ -33,5 +33,12 @@
     scale: 0.1,
     reset: true
   });
+
+  ScrollReveal().reveal('.contact-imgs img',{
+    duration: 2000,
+    origin: 'top',
+    distance: '50px',
+    reset: true
+  })
 }
 
